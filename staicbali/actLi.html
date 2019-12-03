@@ -1,0 +1,159 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'tom.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	  <link rel="stylesheet" type="text/css" href="CSS/index_CSS.css"/>
+	  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+			function change(xx)
+			{
+				
+				
+				var url=document.getElementById(xx).src;
+				
+				document.getElementById("picture").src=url;
+				
+			}
+			var i=100;
+			function next()
+			{
+				if(i>=500)
+					i=0;
+				var x=i+100;//起始值
+				
+				for(var j=100;j<500;j=j+100)
+				{
+					document.getElementById(j).src="Images/LBB-"+x+".jpg";
+					x=(x+100)>500?100:x+100;
+				}
+				i=i+100;
+				
+			}
+			
+	</script>
+  </head>
+  
+  <body>
+     <div id="wmw_head">
+		 <div id="WebAll1">
+			 <div id="WebTopAll" onmouseout="hide()">
+				 <div id="WebPicture" onmouseout="hide()"></div>
+				 <div id="WebLink" onmouseout="hide()">
+					 <a href="#"><img src="Images/qq.gif" border="0"> </a> <a
+						 href="#"><img src="Images/youku.gif" border="0"> </a>
+
+				 </div>
+
+				 <div id="WebAdd" style="color: white">
+					 ${sessionScope.user.userName}你好！ <a href="logout.jsp">注销</a>
+					 <a href="register.jsp">注册</a> <a href="login.jsp">登录</a>
+				 </div>
+				 </c:if>
+
+			 </div>
+
+
+			 <div class="showDiv" id="<s:property value = 'key.rightCode'/>"
+				  onmousemove="show()"
+				  onmouseout="hide1(rightCode)">
+				 <div id="hair">
+					 <div id="hairNeed">
+						 <div class="title">欢迎进入</div>
+						 <div class="title">
+							 <hr style="color:black" />
+						 </div>
+						 <table border="0" style="font-weight:bold">
+							 <tr>
+								 <td><a href="rightUrl">rightText</a>
+								 </td>
+							 </tr>
+
+						 </table>
+					 </div>
+
+				 </div>
+			 </div>
+
+			 <div id="divShow2" style="color: white">请登录查看更多内容</div>
+
+		 </div>
+  	</div>
+<div id="WebAll">
+  			<div id="act">
+  				<div class="actPhoto" >
+  					<table border="0">
+  					<tr><td style="height:452px">
+  					<div id="actClear">
+  							<div class="actLeft" style="float:left"><img src="Images/left.jpg" onclick="next()"></div>
+  							<div class="actPicture"  ><img id="100" style="width:136px; height:85px;" src="Images/LBB-100.jpg" onmousemove="change('100')"></div>
+  							<div class="actPicture" ><img  id="200" style="width:136px; height:85px;" src="Images/LBB-200.jpg" onmousemove="change('200')"></div>
+  							<div class="actPicture" ><img  id="300" style="width:136px; height:85px;" src="Images/LBB-300.jpg" onmousemove="change('300')"></div>
+  							<div class="actPicture" ><img  id="400" style="width:136px; height:85px;" src="Images/LBB-400.jpg" onmousemove="change('400')"></div>
+  							<div class="actPicture" style="display: none" ><img  id="5" src="Images/LBB-5.jpg"></div>
+  							<div class="actLeft" style="float:right"><img src="Images/right.jpg" onclick="next()"></div>
+  					</div>
+  					<img src="Images/LBB-300.jpg" id="picture"/>
+  					</td>
+  					</tr>
+  					</table>
+  				</div>
+  				<div id="actName">国际巨星李冰冰 </div>
+  				<div id="actMovie">
+  					正式加入巴黎欧莱雅代言人"梦之队"
+  					<img src="Images/lbb07.jpg">
+  					<div id="actGo">&nbsp;>观看明星精彩视频</div>
+  				</div>
+  			</div>
+  			<div id="introduce">
+  					<div id="introduce1">
+  						<div id="inPhoto"></div>
+  					</div>
+  					
+  					<div id="inMovie">
+  							<h1>李冰冰简介</h1>
+  							<h3>李冰冰毕业于上海戏剧学院表演系。2000年因主演《少年包青天》而被观众熟知；2000年以电影《过年回家》获第十三届新加坡国际电影节最佳女主角奖；2004年凭借电影《天下无贼》将事业推上了巅峰；2007年凭借《云水谣》获第12届中国电影华表奖影后，2008年获第29届大众电影百花奖影后；2009年凭借影片《风声》中的精彩演技荣获台湾电影金马奖影后。
+
+李冰冰不仅拥有表演上的高度，更拥有人生的高度，她把公益当成生命中最重要的事业之一。她积极投入到环保低碳及公益慈善事业领域，她不停地奔走呼唤，用自己的热情、坚持及行动来影响更多的人。她担任联合国环境规划署国际亲善大使、世界自然基金会 "地球一小时"全球推广大使、国际气候组织"百万森林"项目发起人、[L.O.V.E有责任的生活]自主公益品牌创始人等</h3>
+  					</div>
+  					<div class="inMovieLeft">
+  							<h1>主要作品</h1>
+  							<h3>主要影视作品：<br/>
+《军嫂》，《猛龙》，《风声》，《飞鹰》，《警魂》，《紫蝴蝶》，《蝴蝶飞》，《我愿意》，《乔迁之喜》，《过年回家》，《绿色柔情》，《百年好合》，《独自等待》，《情陷擂台》，《天下无贼》，《云水谣》，《童梦奇缘》，《功夫之王》，《枪王之王》，《辛亥革命》，《雪花密扇》，《生化危机5》，《老鼠爱上猫》，《红玫瑰与白玫瑰》，《狄仁杰之通天帝国》等　</h3>
+  					</div>
+  					<div class="inMovieLeft">
+  						<div id="bitu"></div>
+  					</div>
+  					<div id="liAndBa">
+  							<div id="moush"></div>
+  							<div id="liAnd">
+  								<h1>李冰冰与巴黎欧莱雅</h1>
+  								<h3>2008年，李冰冰正式加盟巴黎欧莱雅"梦之队"，她典雅的气质、自信的生活态度、对梦想的坚持都与巴黎欧莱雅多年来一直致力传承的美丽精神不谋而合，其独特的魅力及由心绽放的自信正可完美传达巴黎欧莱雅的品牌理念。
+欧莱雅集团副总裁大众化妆品部总经理张耀东先生评价说"李冰冰的良好形象和知名度将有助于巴黎欧莱雅对中国市场的进一步拓展，更将推动巴黎欧莱雅品牌形象的更新，是巴黎欧莱雅品牌建设道路上的又一次重大举措，相信彼此之间的合作将会非常愉快。"</h3>
+  							</div>
+  					</div>
+  					<div id="inMovieRight">
+  							<h1>所有代言人</h1>
+  							<h4><a href="actBingbing.html">范冰冰</a>&nbsp;<a href="actGong.html">巩&nbsp;俐&nbsp;</a><a href="">李冰冰</a></h4>
+  							<h4><a href="">李宇春</a><a href="actRuan.html">阮经天</a><a href="">吴彦祖</a></h4>
+  					</div>
+  					<div id="adver">
+  						<h1>更多广告大片</h1>
+  						<a href=""><img src="Images/lbb05.jpg" border="0"></a>
+  						<a href=""><img src="Images/lbb04.jpg" border="0"></a>
+  					</div>
+  			</div>
+   		</div>
+  </body>
+</html>
+  	

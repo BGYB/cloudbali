@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<!-- namespace对应的是接口文件 -->
+<mapper namespace="com.bali.common.mapper.UserMapper">
+
+	<resultMap id="userMap" type="UserInfo">
+		<id property="userId" column="user_id" />
+		<result property="userName" column="user_name"/>
+		<result property="userPwd" column="user_pwd"/>
+		<result property="userRoleId" column="user_role_id"/>
+	</resultMap>
+
+
+
+
+	 <select id = "getUserListByMap" resultMap="userMap" parameterType="map">
+		 SELECT user_id,user_name,user_pwd,user_role_id
+		 FROM user_info
+		 <trim prefix="where" prefixOverrides="and | or">
+			 <if test="userId != null and userId !=''">
+				 and user_id=#{id}
+			 </if>
+			 <if test="userName != null and userName!=''">
+				 and user_name=#{userName}
+			 </if>
+			 <if test="userPwd != null and userPwd!=''">
+				 and user_pwd=#{userPwd}
+			 </if>
+			 <if test="userRoleId != null and userRoleId!=''">
+				 and user_role_id=#{userRoleId}
+			 </if>
+		 </trim>
+		 <if test="beginPos != null and pageSize != null ">
+			 limit #{beginPos},#{pageSize}
+		 </if>
+	 </select>
+
+
+
+	<insert id="NewUser" parameterType="UserInfo">
+		insert into user_info values(seq_user_id.nextval,#{userName},#{userPwd},#{userRoleId})
+	</insert>
+
+
+	<select id = "loadUser" resultMap="userMap" parameterType="String">
+		SELECT user_id,user_name,user_pwd,user_role_id
+		FROM user_info where  user_name=#{userName} and user_pwd=#{userPwd}
+	</select>
+
+
+
+
+</mapper>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+	  <meta charset="UTF-8">
+    
+    <title>商品列表</title>
+    
+	<link rel="stylesheet" type="text/css" href="CSS/product.css"/>
+	  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="js/common.js"></script>
+	  <script type="text/javascript" src="js/index_js.js"></script>
+	  <script type="text/javascript" src="js/BuyList.js"></script>
+	<style  type="text/css">
+		#main {
+
+			width: 1000px;
+			margin-left: 140px;
+
+		}
+		#main table{
+		
+			margin:15px auto;
+			width:800px;
+			text-align: center;
+		}
+		#main table caption{
+			height: 45px;
+			font-size: 25px;
+			line-height: 35px;
+			color: #6c91ff;
+			
+		}
+		#main table tr{
+			height: 35px;
+			font-size: 15px;
+		}
+		
+	</style>
+  </head>
+  
+  <body>
+  <div id="container">
+    <div id="header">
+
+    </div>
+    <div id="main">
+    	<table border="2" id="table">
+    		<caption>购物车商品列表</caption>
+    		<tr style="color: green">
+				<th>商品图片</th>
+    			<th>商品名称</th>
+    			<th>商品分类</th>
+    			<th>商品单价</th>
+    			<th>商品数量</th>
+				<th>商品总价</th>
+    		</tr>
+    		<!--<tr>-->
+    			<!--<td> <s:property value="product.productName" /></td>-->
+    			<!--<td><s:property value="product.childType.childName" /></td>-->
+    			<!--<td>￥ ： <s:property value="product.price" />元</td>-->
+    			<!--<td><s:property value="productNum" /></td>-->
+    		<!--</tr>-->
+    	</table>
+    </div>
+    <div id="footeraa" style="margin-left: 9%;"></div>
+  </div>
+  </body>
+</html>

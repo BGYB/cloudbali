@@ -1,0 +1,30 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8801/eureka/
+# 服务端口
+server:
+  port: 8802
+# 服务名及配置jdbc连接数据库
+spring:
+  application:
+    name: userprovider
+#  main:
+#    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/bali?charactorEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#myatis配置
+mybatis:
+  type-aliases-package: com.bali.common  #映射对应实体类中的路径，
+  mapper-locations: classpath:mapper/*Mapper.xml #扫描mapper.xml文件路径
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging: #查看执行的sql语句
+  level:
+    com.bali.common: debug

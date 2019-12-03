@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8801/eureka/
+server:
+  port: 8804
+spring:
+  application:
+    name: zuulserver
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+    timeout: 300
+#    pool:
+#      max-idle: 8
+#      min-idle: 0
+
+zuul:
+  routes:
+    userconsumer: /user/**  #用户网关请求路径
+    productconams: /product/**  #商品网关请求路径

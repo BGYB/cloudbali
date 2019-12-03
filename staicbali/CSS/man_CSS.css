@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+#wmw_head{
+	width: 1366px;
+	}
+#footeraa
+	{
+		width:950px;
+		height:139px;
+		float:left;
+	}
+	div,table,tr,td,ul,ol,li,dl,dt,dd,p{
+	margin:0px auto;
+	padding:0px;
+	}
+	
+	.container{
+	width:1366px;
+	background-color:#000000;
+	}
+	.linkBody{
+	
+	width:960px AUTO;
+	margin-left:180px;
+	}
+	
+	.bodyTopBg{
+	width:950px;
+	height:372px;
+	}
+	.t
+	{
+		height:20px;
+		float:left;
+	}
+	#bodyButtonTitle2{
+	
+	font-size:16px;
+	color:#FF8000;
+	padding-left:20px;
+	height:20px;
+	}
+	p{padding-left:20px;}
+	a{
+		 color:gray;
+		 font-size:14px;
+		 font-family: 宋体;
+	}
+	.select
+	{
+	color:#FF0000;}
+	.bodyButtonBg{
+	width:950px;
+	background-color:#FFFFFF;}
+	#bodyButtonTitle1{
+	font:"新宋体";
+	font-size:24px;
+	color:#FF8000;
+	padding-top:10px;
+	padding-left:20px;}
+	#bodyButtonTitle2{
+	font-size:16px;
+	color:#FF8000;
+	padding-left:20px;}
+	.knowMore{
+	background-color:#FF9966;
+	float:right;
+	margin-right:20px;
+	}

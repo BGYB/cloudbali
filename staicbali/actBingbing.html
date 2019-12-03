@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>�ٱ�Ů��������</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	  <link rel="stylesheet" type="text/css" href="CSS/index_CSS.css"/>
+	  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+			function change(xx)
+			{
+				
+				
+				var url=document.getElementById(xx).src;
+				
+				document.getElementById("picture").src=url;
+				
+			}
+			var i=100;
+			function next()
+			{
+				if(i>=500)
+					i=00;
+				var x=i+100;//��ʼֵ
+				
+				for(var j=100;j<500;j=j+100)
+				{
+					document.getElementById(j).src="Images/FBB-"+x+".jpg";
+					x=(x+100)>500?100:x+100;
+				}
+				i=i+100;
+				
+			}
+			
+	</script>
+  </head>
+  
+  <body>
+<div id="WebAll">
+  			
+  			<div id="act">
+  				<div class="actPhoto" >
+  					<table border="0">
+  					<tr><td style="height:452px">
+  					<div id="actClear">
+  							<div class="actLeft" style="float:left"><img src="Images/left.jpg" onclick="next()"></div>
+  							<div class="actPicture"  ><img id="100" style="width:136px; height:85px;" src="Images/FBB-100.jpg" onmousemove="change('100')"></div>
+  							<div class="actPicture" ><img  id="200" style="width:136px; height:85px;" src="Images/FBB-200.jpg" onmousemove="change('200')"></div>
+  							<div class="actPicture" ><img  id="300" style="width:136px; height:85px;" src="Images/FBB-300.jpg" onmousemove="change('300')"></div>
+  							<div class="actPicture" ><img  id="400" style="width:136px; height:85px;" src="Images/FBB-400.jpg" onmousemove="change('400')"></div>
+  							
+  							<div class="actLeft" style="float:right"><img src="Images/right.jpg" onclick="next()"></div>
+  					</div>
+  					<img src="Images/FBB-300.jpg" id="picture"/>
+  					</td>
+  					</tr>
+  					</table>
+  				</div>
+  				<div id="actName">�ٱ�Ů�������� </div>
+  				<div id="actMovie">
+  					��ʽ�������ŷ���Ŵ�����"��֮��"
+  					<img src="Images/fbb06.jpg">
+  					<div id="actGo">&nbsp;>�ۿ����Ǿ�����Ƶ</div>
+  				</div>
+  			</div>
+  			<div id="introduce">
+  					<div id="introduce1">
+  						<div id="inPhoto1"><h3>��2010���63����ɹ��ʵ�Ӱ�ڿ�Ļ֮�ʣ�ȫ��������ױƷ�ư���ŷ���Ÿߵ�����������ǣ���й�Ӱ�Ƿ�������ʽ�������ŷ��������"��֮��"����Ϊ����ŷ�������������´����ˡ��ɴˣ���������Ϊ�̹����������֮����һλ���˰���ŷ��������"��֮��"�Ӵ����ݵĻ���ŮӰ�ǡ�</h3></div>
+  					</div>
+  					
+  					<div id="inMovie">
+  							<h1>���������</h1>
+							<h3>��������������ɽ��ʡ�ൺ�У���ҵ���Ϻ�л����ͨ����ѧУ�������й�һ��Ů��Ա��ͬʱҲ�Ǹ��֣�������������Ϊ�й�������Ů��֮һ��
+
+1997����������硶�����������Ѳ���50�ಿӰ����Ʒ���ݳ���2003���״������ӫĻ���ڷ�С�յ��ݵĺ���Ƭ���ֻ�������������һ�ǣ��ɹ�ת��Ϊһ�ߵ�ӰŮ�ǡ�2005�귢���һ�Ÿ���ר�����ոտ�ʼ��չʾ���������츳��һ�档2004�귶������õ�27����ڵ�Ӱ�ٻ���"���Ů��Ա"��������Ŭ���뾴ҵ�õ����ڶ�ҵ����ʿ�Ŀ϶�����ͬ������Ϊ�й����Ů��Ա֮һ��</h3>
+  					</div>
+  					<div class="inMovieLeft">
+  							<h1>��Ҫ��Ʒ</h1>
+  							<h3>��ҪӰ����Ʒ��<br/>
+�������񡷣����Ӷ�ʨ�𡷣���ʮ��Χ�ǡ����������¼������������й���������ʥ�������ǳ�����������δ�����졷�����������졷�������ࡷ������֬ѩ�������������ת�ơ�����ī�������������顷����ƻ���������ֻ�������������������꡷���������š�����Stretch���ȡ���</h3>
+  					</div>
+  					<div class="inMovieLeft">
+  						<div id="bitu1"></div>
+  					</div>
+  					<div id="liAndBa">
+  							<div id="moush1"></div>
+  							<div id="liAnd">
+  								<h1>�����������ŷ����</h1>
+  								<h3>����ŷ����Ʒ���ܾ�����ػ�Ůʿ��ʾ��"������ӵ��������Ϣ����ò��������Ľ�ĺü����������������Ķ������ʣ��ܺõ�ڹ�����ִ�Ů�����š����������ҵ����������ʱ������������Ҫ���ǣ�ǧ�����ĵ�������һ��һ����ǰ�Ѳ���ҵ������������һ��ִ�żᶨ���������˵��ģ�����ƾ����������Ŭ����̬�ȡ��ܶ�ƴ���ľ���ʹ��һ��һ�������ɱ䣬��һ�����Ӿ���Ա�ɹ�ת��Ϊ��Ӱ��Ա�����󵨳��Ը��ֲ�ͬ�Ľ�ɫ����ʹ�������飬��Ȼ�����ս���ң�׷��������������ʮ�����ͷ�����������Щ��������㣬�ڴ����ļ����ð���ŷ���Ÿ����Զ�Ԫ�������ڲ�ͬ������Ҳ���ŷ�����һ����Ӯ��������������˵��Ͽ����ע����һ����ӵ��һ����Ϊ�ǹ��貵�δ����"</h3>
+  							</div>
+  					</div>
+  					<div id="inMovieRight">
+  							<h1>���д�����</h1>
+  							<h4><a href="#">������</a>&nbsp;<a href="actGong.html">��&nbsp;��&nbsp;</a><a href="actLi.html">�����</a></h4>
+  							<h4><a href="#">���</a><a href="actRuan.html">���</a><a href="#">������</a></h4>
+  					</div>
+  					<div id="adver">
+  						<h1>�������Ƭ</h1>
+  						<a href="#"><img src="Images/fbb03.jpg" border="0"></a>
+  						<a href="#"><img src="Images/fbb04.jpg" border="0"></a>
+  						<a href="#"><img src="Images/fbb05.jpg" border="0"></a>
+  					</div>
+  			</div>
+
+   		</div>
+  </body>
+</html>
+  	

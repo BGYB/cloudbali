@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册页面</title>
+    <link rel="stylesheet" type="text/css" href="CSS/head_CSS.css">
+    <link rel="stylesheet" type="text/css" href="CSS/login_CSS.css"></link>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/login_js.js"></script>
+   <!-- <script type="text/javascript" src="js/register.js"></script>-->
+</head>
+<body>
+<div id="wmw_head">
+    <div id="WebAll1">
+        <div id="WebTopAll" >
+            <div id="WebPicture"></div>
+            <div id="WebLink">
+                <a href="#"><img src="Images/qq.gif" border="0"> </a> <a
+                    href="#"><img src="Images/youku.gif" border="0"> </a>
+            </div>
+
+            <div id="WebAdd" style="color: white">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="main">
+    <div id="wmw_main">
+        <div id="wmw_img">
+            <div id="wmw_l">
+                <div id="wmw_re">
+                        <table>
+                            <tr>
+                                <td><label id="wmw_m">邮箱</label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text" id="mail" name="userName"
+                                           value=""/></td>
+                                <td><label id="wmw_n" style='color:red;font-size:12px;'></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label id="wmw_p">密码</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" id="pwd" name="userPassword"
+                                           size="21"></td>
+                                <td><label id="wmw_nn"
+                                           style='color:red;font-size:12px;display:none'>密码长度不能小于6位！</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> <input type="text" id="validateCode" placeholder="请填写验证码" style="width: 84px"/>
+                                    <img alt="看不清，换一张" src="http://localhost:8804/user/DrawImage?createTypeFlag=nl" id="validateCodeImg1" onclick="changeImg('nl')">
+                                </td>
+                                <td><label id="wmw_nn2" style='color:red;font-size:12px;display:none'>密码长度不能小于6位！</label>
+                                </td>
+                            </tr>
+
+                            <tr id="wmw_tr">
+                                <td>
+                                    <a href="javascript:void(0);" id="loginBtn">
+                                        <img src="Images/n15.gif" border="0"/>
+                                    </a>
+                                    <a href="javascript:void(0);" id="registerBtn">
+                                        <img src="Images/n16.gif" border="0"/>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div id="wmw_buttom">
+                <img src="Images/untitle.jpg"/>
+                <img src="Images/n04.jpg" class="wmw_i">
+                <img src="Images/n06.jpg" class="wmw_i">
+                <img src="Images/n08.jpg" class="wmw_i">
+                <img src="Images/n10.jpg" class="wmw_i">
+                <img src="Images/n12.jpg" class="wmw_i">
+            </div>
+        </div>
+    </div>
+    <div id="footeraa">
+        <img src="Images/footer.jpg" width="950" height="139"/>
+    </div>
+</div>
+
+</body>
+</html>

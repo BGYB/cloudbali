@@ -1,0 +1,16 @@
+# 服务名
+spring:
+  application:
+    name: eureka
+# 服务端口
+server:
+  port: 8801
+
+eureka:
+  instance:
+    hostname: localhost # eureka服务端的实力名称
+  client:
+    registerWithEureka: false # false表示自己不需要向注册中心注册自己
+    fetchRegistry: false   # false表示自己就是注册中心。我的职责就是维护服务实例，并不需要去检索服务
+    serviceUrl:
+      defaultZone: http://localhost:8801/eureka/  # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址(单机版)

@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+body,div{
+	margin:0px auto;
+	padding:0px;}
+#main{
+	width:1366px;
+	background-color:#000;}
+#m{
+	width:1024px;
+	background-color:#000;}
+	#wmw_head{
+	width: 1366px;
+	}
+				#footeraa
+	{
+		width:950px;
+		height:139px;
+		margin-left: 180px;
+	}
+#t{
+	width:950px;
+	margin-top:10px;
+	margin-left:180px;
+	
+	}
+#olay{
+	color:#FFF;
+	font-size:12px;
+	float:left;
+	margin-left:30px;
+	margin-top:20px;}
+#w{
+	width:950px;
+	margin-left:180px;
+	background-color:#FFF;	
+}
+#word{
+	width:920px;
+	height:25px;
+	background:url(../Images/franchise-h.jpg) no-repeat;
+	float:left;
+	margin-top:20px;
+	margin-left:30px;}
+#sp{
+	font-size:17px;
+	font-weight:bold;
+	color:#666;
+	margin-top:20px;
+	float:left;
+	margin-left:20px;}
+a{
+	text-decoration:none;
+	color:#666;}
+#tables{
+	width:900px;
+	float:left;
+	color:#333;
+	margin-top:20px;
+	margin-left:30px;
+	text-align:center;}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="or.og.bali.mapper.RoleInfoMapper">
+    <resultMap id="roleMap" type="RoleInfo">
+        <id property="roleId" column="role_id" />
+        <result property="roleName" column="role_name"/>
+    </resultMap>
+
+    <select id="getRoleListByMap" resultMap="roleMap" parameterType="map">
+        SELECT role_id,role_name
+        FROM role_info
+        <trim prefix="where" prefixOverrides="and | or">
+                <if test="roleId != null and roleId !=''">
+                    and role_id=#{roleId}
+                </if>
+                <if test="roleName != null and roleName!=''">
+                    and role_name=#{roleName}
+                </if>
+        </trim>
+        <if test="beginPos != null and pageSize != null ">
+            limit #{beginPos},#{pageSize}
+        </if>
+    </select>
+
+</mapper>

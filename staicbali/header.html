@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>头部</title>
+
+<link rel="stylesheet" type="text/css" href="CSS/head_CSS.css">
+<script type="text/javascript" >
+    function show(aa) {
+        document.getElementById(aa).style.display = "block";
+    }
+    function hide() {
+        for ( var i = 1; i < 9; i++) {
+            document.getElementById(i).style.display = "none";
+        }
+    }
+    function hide1(i) {
+        document.getElementById(i).style.display = "none";
+    }
+
+
+</script>
+</head>
+
+<body>
+<div id="WebAll1">
+    <div id="WebTopAll" >
+        <div id="WebPicture" ></div>
+        <div id="WebLink">
+            <a href="#"><img src="Images/qq.gif" border="0"> </a> <a
+                href="buyList.html"><img src="Images/youku.gif" border="0"> </a>
+
+        </div>
+
+            <div id="WebAdd" style="color: white">
+                ${sessionScope.user.userName}你好！ <a href="logout.jsp">注销</a>
+                <a href="register.jsp">注册</a> <a href="login.jsp">登录</a>
+            </div>
+        </c:if>
+
+    </div>
+
+
+            <div class="showDiv" id="<s:property value = 'key.rightCode'/>"
+                 onmousemove="show()"
+                 onmouseout="hide1(rightCode)">
+                <div id="hair">
+                    <div id="hairNeed">
+                        <div class="title">欢迎进入</div>
+                        <div class="title">
+                            <hr style="color:black" />
+                        </div>
+                        <table border="0" style="font-weight:bold">
+                                <tr>
+                                    <td><a href="rightUrl">rightText</a>
+                                    </td>
+                                </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        <div id="divShow2" style="color: white">请登录查看更多内容</div>
+
+</div>
+</body>
+</html>

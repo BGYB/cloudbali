@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+input,button,img,a,ul,li,div,body{
+	text-decoration:none;
+	list-style:none;
+	padding:0px;
+	margin:0px auto;}
+	
+	.container{
+	background-color:#000000;
+	width:1340px;
+	}
+	#middle
+	{
+		width:950px;
+		height:600px;
+		margin-left: 180px;
+		background-color: white;
+		margin-top: 10px;
+	}
+	#one
+	{
+		width:950px;
+		height:400px;
+	}
+	#pictureShow
+	{
+		width:250px;
+		height:250px;
+		margin-top: 50px;
+		margin-left:90px;
+		border-width: 1px;
+		border-style:solid;
+		border-color:gray;
+	}
+	#leftShow
+	{
+		width:450px;
+		height:350px;
+		float:right;
+	}
+	#footeraa
+	{
+		width:950px;
+		height:139px;
+		margin-left: 180px;
+	}
+	#productName
+	{
+		width:350px;
+		height:40px;
+		margin-top: 140px;
+	}
+	#price
+	{
+		width:350px;
+		height:40px;
+		margin-top: 5px;
+	}
+	#price1
+	{
+		width:100px;
+		height:40px;
+		margin-top: 5px;
+		font-size: 12px;
+	}
+	#series
+	{
+		width:400px;
+		height:200px;
+		float:left;
+		margin-left: 35px;
+		margin-top: 15px;
+	}
+	.tableA
+	{
+		width:400px;
+	}
+	#tong
+	{
+		width:400px;
+		height:80px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.small
+	{
+		width:80px;
+		height:75px;
+		background-color: red;
+		float:left;
+		margin-left: 14px;
+	}

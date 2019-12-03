@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+	body,div{
+	margin: 0px,auto;
+	padding: 0px;}
+#main{
+	width:1366px;
+	
+	background-color:#000;}
+#m{
+	width:1024px;
+	margin-left: 180px;
+	}
+#js{
+	width:1024px;
+	
+	background-color:#FFF;}
+#bg{
+	width:1024px;
+	height:72px;
+	background:url(../Images/bg_introduce.png) no-repeat;
+	background-position:center;
+	}
+#xq{
+	width:1024px;
+	height:500px;
+	}
+#leftbtudiv{
+	width:38px;
+	height:500px;
+	margin-left:10px;
+	float:left;
+}
+#rightbtudiv{
+	width:38px;
+	height:500px;
+	margin-right:10px;
+	float:right;}
+#leftbtu{
+	width:38px;
+	height:38px;
+	margin-top:245px;
+	background:url(../Images/leftbtu.png) no-repeat;}
+#rightbtu{
+	width:38px;
+	height:38px;
+	margin-top:245px;
+	background:url(../Images/rightbtn.png) no-repeat;}
+
+.tp{
+	width:928px;
+	height:500px;
+	float:left;
+	background-color:#FFF;
+}
+.tp1{
+	width:928px;
+	float:left;
+	margin-left:5px;
+	background-color:#FFF;
+}
+	.div6{
+		width:928px;
+	height:500px;
+	margin-top:0px;}
+	#div1{
+		width:173px;
+		height:294px;
+		margin-left:80px;
+		margin-top:100px;
+		z-index:1;
+		float:left;position:absolute;}
+		#div2{
+		width:213px;
+		height:334px;
+		margin-left:180px;
+		margin-top:80px;
+		z-index:2;
+		float:left;position:absolute;}
+		#div3{
+		width:253px;
+		height:374px;
+		margin-left:330px;
+		margin-top:60px;
+		z-index:3;
+		float:left;position:absolute;}
+		#div4{
+		width:213px;
+		height:334px;
+		margin-left:530px;
+		margin-top:80px;
+		z-index:2;
+		float:left;position:absolute;}
+		#div5{
+		width:173px;
+		height:294px;
+		margin-left:680px;
+		margin-top:100px;
+		z-index:1;
+		float:left;position:absolute;}
+	#wz{
+		border-top:solid #000 solid;
+		margin-top:10px;
+		width:1024px;
+		height:100px;
+		background-color:#FFF;}
+	#one1{
+		width:204.8px;
+		height:100px;
+		float:left;
+		background-color:#fff;}
+	#num{
+		font-size:80px;
+		width:30px;
+		height:100px;
+		color:#CCC;
+		float:left;}
+	.txt{
+		width:150px;
+		float:left;
+		font-size:26px;
+		margin-top:35px;
+		margin-left:5px;
+		color:#CCC;}
+		#num2{
+		font-size:80px;
+		width:30px;
+		height:100px;
+		color:#CCC;
+		float:left;}
+	#txt2{
+		width:160px;
+		float:left;
+		font-size:26px;
+		margin-top:35px;
+		margin-left:5px;
+		color::#CCC;}
+	#one2,#one3,#one4,#one5{
+		width:204.8px;
+		height:100px;
+		float:left;
+		color:#CCC;
+		background-color:#FFF;}
+	#footeraa
+	{
+		width:984px;
+		height:139px;	
+		margin-top: 20px;
+		background-image: url("../Images/footer.jpg");
+	}
+	#wmw_head{
+	width: 1366px;
+	height: 100px;
+	}

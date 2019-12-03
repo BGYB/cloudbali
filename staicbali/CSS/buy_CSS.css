@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+#wmw_head{
+	width: 1366px;
+	}
+				#footeraa
+	{
+		width:950px;
+		height:139px;
+		margin-left: 180px;
+	}
+body,div{
+	margin:0px auto;
+	padding:0px;}
+#main{
+	width:1366px;
+	background-color:black;}
+#m{
+	width:1024px;
+	margin-left:180px;
+	background-color:#000;}
+#top{
+	width:1024px;
+	height:475px;
+	background-color:#FFF;}
+#leftImg{
+	width:235px;
+	height:272px;
+	background-color:#0C9;
+	margin-left:150px;
+	margin-top:50px;
+	float:left;}
+#rightTopMain{
+	width:330px;
+	height:50px;
+	background-color:#C66;
+	float:right;
+	margin-top:60px;
+	margin-right:150px;}
+#rightMiddleMain{
+	width:330px;
+	height:50px;
+	background-color:#CFC;
+	float:right;
+	margin-top:15px;
+	margin-right:150px;
+	}
+#rightDownMain{
+	width:330px;
+	height:60px;
+	background-color:#306;
+	float:right;
+	margin-top:20px;
+	margin-right:150px;}
+#rightDownMainWord{
+	width:330px;
+	height:20px;
+	background-color:#306;
+	float:right;
+	margin-top:20px;
+	margin-right:150px;}
+#buy{
+	width:102px;
+	height:37px;
+	background-color:#306;
+	float:right;
+	margin-top:20px;
+	margin-right:350px;
+	}
+#downDown{
+	width:1024px;
+	background-color:#FFF;
+	height:400px;
+	margin-top:30px;}
+#downTop{
+	margin-top:50px;
+	float:left;
+	margin-left:30px;
+	width:368px;
+	height:35px;}
+#top1{
+	width:184px;
+	height:35px;
+	float:left;
+	background-color:#CF6;
+	}
+#top2{
+	width:184px;
+	height:35px;
+	float:left;
+	background-color:#F3C;
+	}
+.d2{
+	width:600px;
+	height:300px;
+	margin-left:30px;
+	background-color:#099;
+	float:left;}
+.d3{
+	width:600px;
+	height:300px;
+	margin-left:30px;
+	background-color:#099;
+	float:left;}
+#left11{
+	width:700px;
+	background-color:#33C;
+	height:400px;
+	float:left;}

@@ -1,0 +1,162 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'tom.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	  <link rel="stylesheet" type="text/css" href="CSS/index_CSS.css"/>
+	  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+			function change(xx)
+			{
+				
+				
+				var url=document.getElementById(xx).src;
+				
+				document.getElementById("picture").src=url;
+				
+			}
+			var i=100;
+			function next()
+			{
+				if(i>=500)
+					i=100;
+				var x=i+100;//起始值
+				
+				for(var j=100;j<500;j=j+100)
+				{
+					document.getElementById(j).src="Images/RJT-"+x+".jpg";
+					x=(x+1)>500?100:x+100;
+				}
+				i=i+100;
+			}
+			
+	</script>
+  </head>
+  
+  <body>
+     <div id="wmw_head">
+		 <div id="WebAll1">
+			 <div id="WebTopAll" onmouseout="hide()">
+				 <div id="WebPicture" onmouseout="hide()"></div>
+				 <div id="WebLink" onmouseout="hide()">
+					 <a href="#"><img src="Images/qq.gif" border="0"> </a> <a
+						 href="#"><img src="Images/youku.gif" border="0"> </a>
+
+				 </div>
+
+				 <div id="WebAdd" style="color: white">
+					 ${sessionScope.user.userName}你好！ <a href="logout.jsp">注销</a>
+					 <a href="register.jsp">注册</a> <a href="login.jsp">登录</a>
+				 </div>
+				 </c:if>
+
+			 </div>
+
+
+			 <div class="showDiv" id="<s:property value = 'key.rightCode'/>"
+				  onmousemove="show()"
+				  onmouseout="hide1(rightCode)">
+				 <div id="hair">
+					 <div id="hairNeed">
+						 <div class="title">欢迎进入</div>
+						 <div class="title">
+							 <hr style="color:black" />
+						 </div>
+						 <table border="0" style="font-weight:bold">
+							 <tr>
+								 <td><a href="rightUrl">rightText</a>
+								 </td>
+							 </tr>
+
+						 </table>
+					 </div>
+
+				 </div>
+			 </div>
+
+			 <div id="divShow2" style="color: white">请登录查看更多内容</div>
+
+		 </div>
+  	</div>
+<div id="WebAll">
+  			<div id="act">
+  				<div class="actPhoto" >
+  					<table border="0">
+  					<tr><td style="height:452px">
+  					<div id="actClear">
+  							<div class="actLeft" style="float:left"><img src="Images/left.jpg" onclick="next()"></div>
+  							<div class="actPicture"  ><img id="100" style="width:136px; height:85px;" src="Images/RJT-100.jpg" onmousemove="change('100')"></div>
+  							<div class="actPicture" ><img  id="200" style="width:136px; height:85px;" src="Images/RJT-200.jpg" onmousemove="change('200')"></div>
+  							<div class="actPicture" ><img  id="300" style="width:136px; height:85px;" src="Images/RJT-300.jpg" onmousemove="change('300')"></div>
+  							<div class="actPicture" ><img  id="400" style="width:136px; height:85px;" src="Images/RJT-400.jpg" onmousemove="change('400')"></div>
+  							<div class="actPicture" style="display: none" ><img  id="5" src="Images/LBB-5.jpg"></div>
+  							<div class="actLeft" style="float:right"><img src="Images/right.jpg" onclick="next()"></div>
+  					</div>
+  					<img src="Images/RJT-100.jpg" id="picture"/>
+  					</td>
+  					</tr>
+  					</table>
+  				</div>
+  				<div id="actName">巴黎欧莱雅新面孔阮经天 </div>
+  				<div id="actMovie">
+  					正式加入巴黎欧莱雅代言人"梦之队"
+  					<img src="Images/rjt06.jpg">
+  					<div id="actGo">&nbsp;>观看明星精彩视频</div>
+  				</div>
+  			</div>
+  			<div id="introduce">
+  					<div id="introduce1">
+  						<div id="inPhoto3">阮经天在亚洲大陆的发展非常出人意料。他生于台湾，短短几年间就跃升为亚洲影视界最为著名的年轻演员之一。他是一位颇有天赋的演员，他今天所创造的电影记录证明了他的天资。他的风格、个性及健美身材让他一跃成为时尚教主。阮经天在亚洲地区深受喜爱，此次成为亚洲地区男士护肤第一品牌巴黎欧莱雅男士护肤的代言人，无疑是他在事业上的一次飞跃。</div>
+  					</div>
+  					
+  					<div id="inMovie">
+  							<h1>阮经天演绎经历</h1>
+  							<h3>年仅29岁的阮经天已经走过了一条出色的演艺道路。2010年，他凭借电影《艋钾》，荣获第47届台湾电影节金马奖最佳男演员，这是亚洲地区最重量级的几个电影奖项之一。
+
+2004年，阮经天在电视剧《米迦勒之舞》中首次亮相。
+
+2007年，他的面孔随着电视剧《我在垦丁天气晴》的热播为大家熟知。
+
+2008年，他主演的电视剧《命中注定我爱你》创下收视率第一的纪录，他在其中的表演为他在年度台北电影节中赢得了"偶像剧之王"的封号，这是亚洲地区最具影响力的亚洲演艺圈盛事。</h3>
+  					</div>
+  					<div class="inMovieLeft">
+  							<h1>阮经天简介</h1>
+							<h3>阮经天，1982年出生的台湾演员、模特，钮承泽导演的爱将。阮经天为台湾偶像剧史上收视第一的《命中注定我爱你》的男主角。2010年11月20日，28岁的阮经天凭借电影《艋舺》获得第47届金马奖最佳男主角奖，跃升为影帝级人马。2012年1月31日，阮经天在台湾正式入伍当兵，将服为期1年的替代役。</h3>
+  					</div>	
+  					<div class="inMovieLeft">
+  						<div id="bitu3"></div>
+  					</div>
+  					<div id="liAndBa">
+  							<div id="moush3"></div>
+  							<div id="liAnd">
+  								<h1>巩俐与巴黎欧莱雅</h1>
+								<h3>1996年，巩俐成为巴黎欧莱雅第一位中国形象代言人，蕴含浓郁东方气质的她担任了巴黎欧莱雅卓韵霜护发染发产品、复颜抗皱紧致系列以及受损秀发专属修护——绚色修复系列的形象代言人，她与亚洲女性分享巴黎欧莱雅产品，激励他们共同去感受、追求、展现美。
+欧莱雅集团副总裁大众化妆品部总经理张耀东先生评价说"巩俐是第一位以独特的东方气质打动欧美的中国女性，她令整个西方重新开始瞩目中国，同时也能将欧莱雅关于美的理念完美的传达给中国女性"。
+1996年：巴黎欧莱雅正式登陆中国市场；巩俐成为巴黎欧莱雅第一位中国代言人，并成为卓韵霜护发染发霜形象代言人</h3>
+  							</div>
+  					</div>
+  					<div id="inMovieRight">
+  							<h1>所有代言人</h1>
+  							<h4><a href="actBingbing.html">范冰冰</a>&nbsp;<a href="actGong.html">巩&nbsp;俐&nbsp;</a><a href="actLi.html">李冰冰</a></h4>
+  							<h4><a href="#">李宇春</a><a href="actRuan.html">阮经天</a><a href="">吴彦祖</a></h4>
+  					</div>
+  					<div id="adver">
+  						<h1>更多广告大片</h1>
+  						<a href=""><img src="Images/rjt03.jpg" border="0"></a>
+  						<a href=""><img src="Images/rjt04.jpg" border="0"></a>
+  					</div>
+  			</div>
+   		</div>
+  </body>
+</html>
+  	
